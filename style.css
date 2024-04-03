@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;700&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --white: hsl(0, 0%, 98%);
+}
+
+body {
+    display: flex;
+    width: 100%;
+    /* max-width: 1440px; */
+    flex-direction: column;
+    font-family: Epilogue;
+    font-size: 18px;
+    background: var(--white);
+}
+
+.navbar {
+    display: flex;
+    height: 5vh;
+    padding: 3vh 4vw;
+    font-size: .8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_content {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav_content>p {
+    opacity: 80%;
+}
+
+.login_btn {
+    padding-right: 2vw;
+}
+
+.register_btn {
+    background: var(--white);
+    padding: 1.2vh 1.2vw;
+    border: solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.register_btn:hover {
+    background: black;
+    color: var(--white)
+}
+
+.CTA-button {
+    padding: 1.5vh 1.5vw;
+    font-weight: 700;
+    color: var(--white);
+    background: black;
+    border-radius: 10px;
+    border: none;
+}
+.CTA-button:hover{
+    background-color: var(--white);
+    border: black solid 2px;
+    color: black;
+}
+
+.logo {
+    height: 4vh;
+    margin-right: 2vw;
+}
+
+.main_body {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3vw;
+}
+.text_card{
+    width: max-content;
+}
+
+.text_card>h1 {
+    font-size: 5vw;
+    padding-bottom: 4vh;
+    /* width: max-content; */
+}
+
+.text_card>p {
+    opacity: 80%;
+    font-size: .9rem;
+    max-width: 25vw;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 5.9vh;
+}
+.client_row{
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    height: 2.5vh;
+    position: absolute;
+    bottom: 0%;
+    left: -3%;
+}
+
+.image_card {
+    width: 27vw;
+    padding: 0 5vw;
+}
+.attribution{
+    position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%,-5%);
+}
+
+@media (min-width:1450px) {
+    .main_body {
+        margin: 0 auto;
+    }
+}
