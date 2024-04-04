@@ -3,18 +3,22 @@
 * {
     margin: 0;
     padding: 0;
-    --white: hsl(0, 0%, 98%);
-    
+    --white: hsl(0, 0%, 98%); 
+    --Almost_Black: hsl(0, 0%, 8%);
+    --Medium_Gray: hsl(0, 0%, 41%)
 }
 
 body {
     display: flex;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
+    max-width: 1440px;
     font-family: Epilogue;
     font-size: 18px;
     background: var(--white);
     box-sizing: border-box;
+    
 }
 
 .navbar {
@@ -25,6 +29,8 @@ body {
     font-weight: 500;
     justify-content: space-between;
     align-items: center;
+    color: var(--Medium_Gray);
+    transition: 500ms;
 }
 
 .nav_content {
@@ -33,12 +39,10 @@ body {
     gap: 2vw;
 }
 
-.nav_content>p {
-    opacity: 70%;
-}
-.nav_content>p:hover{
-    opacity: 100%;
+.nav_content>p:hover , .login_btn:hover , .register_btn:hover{
+    color: var(--Almost_Black);
     cursor:pointer;
+    border-color: var(--Almost_Black);
 }
 .login_btn {
     padding-right: 2vw;
@@ -46,31 +50,29 @@ body {
 
 .register_btn {
     background: var(--white);
-    padding: 1.2vh 1.2vw;
-    border: solid 1px;
+    padding: 1.5vh 1.5vw;
+    border: var(--Medium_Gray) solid 2px;
     border-radius: 10px;
-    cursor: pointer;
-}
-
-.register_btn:hover {
-    background: black;
-    color: var(--white)
+    font-family: Epilogue;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--Medium_Gray);
 }
 
 .CTA-button {
     padding: 1.5vh 1.5vw;
     font-weight: 700;
     color: var(--white);
-    background: black;
+    background: var(--Almost_Black);
     border-radius: 10px;
-    border: none;
+    border: var(--Almost_Black) solid 1px;
     font-size: 1rem;
-    position: absolute;
+    transition: 100ms;
 }
 .CTA-button:hover{
     background-color: var(--white);
-    border: black solid 2px;
-    color: black;
+    border: var(--Almost_Black) solid 1px;
+    color:var(--Almost_Black);
     cursor: pointer;
 }
 
@@ -80,50 +82,62 @@ body {
 }
 
 .main_body {
-    position: relative;
+    width: 100%;
+    height: 83%;
+    box-sizing: border-box;
     display: flex;
-    margin: 0 auto;
-    align-items: center;
-    gap: 3vw;
+    position: relative;
+    justify-content: space-around;
+    transition: 500ms ease-in;
+    
 }
 .text_card{
+    width: 50%;
+    padding: 10% 0 0 13%;
+}
+.text_box{
+    width: 100%;
+    height: 100%;
+}
+
+.text_box>h1 {
+    font-size: 4em;
+    padding-bottom: 5%;
     width: max-content;
+    color: var(--Almost_Black);
 }
 
-.text_card>h1 {
-    font-size: 5vw;
-    padding-bottom: 4vh;
-    /* width: max-content; */
-}
-
-.text_card>p {
-    opacity: 70%;
-    font-size: 1vw;
-    max-width: 28vw;
+.text_box > p {
+    color: var(--Medium_Gray);
     line-height: 1.4;
     font-weight: 500;
-    margin-bottom: 5.9vh;
+    margin-bottom: 10%;
 }
 .client_row{
-    width: 50%;
-    justify-content: space-evenly;
+    width:32%;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 2.5vh;
     position: absolute;
-    bottom: 0%;
-    left: -3%;
+    bottom: 1%;
 }
-
-.image_card {
-    width: 27vw;
-    padding: 0 5vw;
+.image_card{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding:2%;
+    padding-bottom: 0%;
+}
+.image_card >  img {
+    height: 100%;
+    
 }
 .attribution{
     position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translate(-50%,-5%);
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,-5%);
 }
 .dropdown-wrapper {
     position: relative;
@@ -195,11 +209,9 @@ body {
 .dropdown-list li:hover a {
     color: #f05b55;
 }
-
 .dropdown-list li:last-of-type a {
     border: none;
 }
-
 .dropdown-list a {
     display: block;
     text-decoration: none;
@@ -208,8 +220,31 @@ body {
     transition: all 0.3s ease-out;
     border-bottom: 1px solid #e6e8ea;
 }
-@media (min-width:1450px) {
+@media (max-width:770px) {
     .main_body {
+        flex-direction: column;
+    }
+}
+@media (min-width:1445px) {
+    body{
         margin: 0 auto;
     }
+    .image_card{
+        padding: 5%;
+    }
+    .client_row{
+        bottom: 9%;
+    }
+    .text_box > h1{
+        font-size: 4.5em;
+    }
+    .text_card{
+        padding-top: 15%;
+
+    }
+    .register_btn{
+        border-radius: 15px;
+        padding: 1.2vh 1.2vw;
+    }
+    
 }
