@@ -139,6 +139,12 @@ body {
     left: 50%;
     transform: translate(-50%,-5%);
 }
+.name:hover{
+    font-size: 15px;
+    font-weight: 700;
+    color: #f05b55;
+
+}
 .dropdown-wrapper {
     position: relative;
     width: 240px;
