@@ -26,44 +26,46 @@
 
 <body>
   <div class="navbar">
-    <span class="nav_content"><img class="logo" src="./images/logo.svg" />
+    <img class="logo Hide" src="./images/logo.svg" />
+    <span class="nav_content m_hide">
+      <img class="logo" src="./images/logo.svg" />
               <p>Features</p>
               <p>Company</p>
-      <!-- <div id="dropdown-wrapper" class="dropdown-wrapper" tabindex="1">
+      <div id="feature-dropdown-wrapper" class="dropdown-wrapper" tabindex="1">
               <p>Features</p>
-      
         <ul class="dropdown-list">
         <li><img src="./images/icon-todo.svg"/> Todo List</li>
         <li><img src="./images/icon-calendar.svg"/> Calender</li>
         <li><img src="./images/icon-reminders.svg"/>Reminders</li>
         <li><img src="./images/icon-planning.svg"/> Planning</li>
           </ul>
-          </div>
-      <div id="dropdown-wrapper" class="dropdown-wrapper" tabindex="1">
+      </div>
+      <div id="company-dropdown-wrapper" class="dropdown-wrapper" tabindex="1">
     <p>Company</p>
     <ul class="dropdown-list">
         <li>History</li>
         <li>Our Team</li>
         <li>Blog</li>
         </ul>
-        </div> -->
+        </div>
       <p>Careers</p>
       <p>About</p>
     </span>
-
-    <span><a class="login_btn">Login</a> <button class="register_btn">Register</button></span>
+     <img class="Hide burgerButton" src="./images/icon-menu.svg"/>
+    <span class="m_hide"><a class="login_btn">Login</a> <button class="register_btn">Register</button></span>
   </div>
   <div class="main_body">
+    <img  class=" Hide mobile_image" src="/images/image-hero-mobile.png"/>
     <div class="text_card">
       <div class="text_box">
         <h1>Make
-          <br>
+          <br class="m_hide">
           remote work
         </h1>
-        <p>Get your team in sync, no matter your location.
-          <br /> Streamline processes,
-          create team rituals, and
-          <br /> productivity soar.
+        <p>Get your team in sync, no matter your <br class="Hide"/>location.
+          <br class="m_hide"/> Streamline processes,
+          create <br class="Hide"/>team rituals, and
+          <br class="m_hide"/> productivity soar.
         </p>
         <button class="CTA-button">Learn more</button>
         <div class="client_row">
@@ -75,7 +77,7 @@
       </div>
       
     </div>
-    <div class="image_card"><img  src="./images/image-hero-desktop.png" /></div>
+    <div class="image_card m_hide"><img src="./images/image-hero-desktop.png" /></div>
 
     
   </div>
@@ -87,5 +89,7 @@
     Coded by <a class="name" href="https://github.com/AnshuSarkarANX">Anshu Sarkar</a>.
   </div>
 </body>
+<script src="script.js"></script>
+
 
 </html>
