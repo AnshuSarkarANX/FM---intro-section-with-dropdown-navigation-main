@@ -94,6 +94,7 @@ body {
 .text_card{
     width: 50%;
     padding: 10% 0 0 13%;
+    box-sizing: border-box;
 }
 .text_box{
     width: 100%;
@@ -147,7 +148,6 @@ body {
 }
 .dropdown-wrapper {
     position: relative;
-    width: 240px;
     margin: 10px;
     padding: 12px 15px;
     background: #fff;
@@ -212,13 +212,13 @@ body {
     padding: 0 10px;
 }
 
-.dropdown-list li:hover a {
+.dropdown-list li:hover  {
     color: #f05b55;
 }
-.dropdown-list li:last-of-type a {
+.dropdown-list li{
     border: none;
 }
-.dropdown-list a {
+.dropdown-list li {
     display: block;
     text-decoration: none;
     color: #333;
@@ -226,11 +226,10 @@ body {
     transition: all 0.3s ease-out;
     border-bottom: 1px solid #e6e8ea;
 }
-@media (max-width:770px) {
-    .main_body {
-        flex-direction: column;
-    }
+.Hide{
+  display:none;
 }
+
 @media (min-width:1445px) {
     body{
         margin: 0 auto;
@@ -251,6 +250,66 @@ body {
     .register_btn{
         border-radius: 15px;
         padding: 1.2vh 1.2vw;
+    }  
+
+} 
+@media (max-width:770px) {
+        .m_hide {
+        display: none;
     }
-    
+    .Hide{
+        display:inline;
+    }
+    .main_body {
+        flex-direction: column;
+        height: 70%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .navbar{
+        padding: 2vh;
+    }
+        .logo{
+        display: block;
+    }
+    .burgerButton{
+        display: block;
+    }
+
+    .mobile_image {
+        display: block;
+        height: 50%;
+        width: 100%;
+    }
+    .text_card{
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .text_box>h1 {
+        font-size: 9vw;
+        width: 100%;
+    }
+    .CTA-button{
+        font-size: 1.2rem;
+        padding: 1.54vh 5vw;
+        border-radius: 18px;
+        max-width: 400px;
+    }
+    .client_row{
+        justify-content: space-evenly;
+        width: 100%;
+        bottom: -10%;
+        max-width: 500px;
+    }
+    .client_row > img {
+        width: 20vw;
+    }
+    .client_row > img:nth-child(2){
+        width: 15vw;
+        height: 3vh;
+    }
+
+
+
 }
