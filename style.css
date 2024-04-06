@@ -371,6 +371,7 @@ body {
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease-out;
+    -webkit-tap-highlight-color: transparent;
 }
 .mobile-dropdown-wrapper.is-active {
     box-shadow: none;
