@@ -29,20 +29,18 @@
     <img class="logo Hide" src="./images/logo.svg" />
     <span class="nav_content m_hide">
       <img class="logo" src="./images/logo.svg" />
-              <p>Features</p>
-              <p>Company</p>
       <div id="feature-dropdown-wrapper" class="dropdown-wrapper" tabindex="1">
-              <p>Features</p>
-        <ul class="dropdown-list">
-        <li><img src="./images/icon-todo.svg"/> Todo List</li>
-        <li><img src="./images/icon-calendar.svg"/> Calender</li>
-        <li><img src="./images/icon-reminders.svg"/>Reminders</li>
-        <li><img src="./images/icon-planning.svg"/> Planning</li>
+          <p>Features<img class="arrow" src="./images/icon-arrow-down.svg"/></p>
+        <ul id="feature-dropdown-list"class="dropdown-list">
+        <li><img src="./images/icon-todo.svg"/> <p>Todo List</p></li>
+        <li><img src="./images/icon-calendar.svg"/><p>Calender</p> </li>
+        <li><img src="./images/icon-reminders.svg"/><p>Reminders</p></li>
+        <li><img src="./images/icon-planning.svg"/><p> Planning</p></li>
           </ul>
       </div>
-      <div id="company-dropdown-wrapper" class="dropdown-wrapper" tabindex="1">
-    <p>Company</p>
-    <ul class="dropdown-list">
+      <div id="company-dropdown-wrapper" class="dropdown-wrapper">
+    <p>Company<img class="arrow" src="./images/icon-arrow-down.svg"/></p>
+    <ul id="company-dropdown-list" class="dropdown-list">
         <li>History</li>
         <li>Our Team</li>
         <li>Blog</li>
@@ -51,11 +49,13 @@
       <p>Careers</p>
       <p>About</p>
     </span>
-     <img class="Hide burgerButton" src="./images/icon-menu.svg"/>
+     <img id="burgerButton" class="Hide burgerButton" src="./images/icon-menu.svg"/>
+     <div id="sidenavbar" class="sidenavbar"><img id="crossButton" class="crossButton" src="./images/icon-close-menu.svg"/></div>
+     
     <span class="m_hide"><a class="login_btn">Login</a> <button class="register_btn">Register</button></span>
   </div>
   <div class="main_body">
-    <img  class=" Hide mobile_image" src="/images/image-hero-mobile.png"/>
+    <img  class="Hide mobile_image" src="/images/image-hero-mobile.png"/>
     <div class="text_card">
       <div class="text_box">
         <h1>Make
