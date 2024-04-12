@@ -171,6 +171,7 @@ body {
 .arrow{
     padding-left:.5vw;
     color: var(--Medium_Gray);
+    transition: all 0.5s;
 }
 
 .dropdown-wrapper.is-active .arrow{
@@ -381,7 +382,6 @@ body {
 .arrow{
     padding-left:.5vw;
     color: var(--Medium_Gray);
-    transition: all 0.5s;
 }
 
 .mobile-dropdown-wrapper.is-active .arrow{
